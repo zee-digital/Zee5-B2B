@@ -1,7 +1,8 @@
-FROM linode/lamp
-COPY SMT/ /usr/src/myapp
-WORKDIR /usr/src/myapp
-CMD [ "php", "./index.php" ]
-
+FROM tutum/lamp:latest
+RUN apt-get update -y
+RUN apt-get install curl -y
+RUN rm -fr /app && git clone https://github.com/nidhi5885/prabind.git /app
+EXPOSE 80 3306
+CMD ["/run.sh"]
 
 
