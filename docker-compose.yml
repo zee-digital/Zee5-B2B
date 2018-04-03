@@ -1,0 +1,7 @@
+version: '3'
+services:
+    azure-vote-front:
+    image: zeetestacr.azurecr.io/zee-digital/zee5-b2b:latest
+    container_name: zeetest
+    ports:
+        - "80:80"
