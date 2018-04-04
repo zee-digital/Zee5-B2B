@@ -2,6 +2,6 @@ version: '2'
 
 services:
  zee5:
-  image: zeetestacr.azurecr.io/zee-digital/zee5-b2b:latest
+  image: zeetestacr.azurecr.io/zee-digital/zee5-b2b:41
   ports:
     - "80:80"
